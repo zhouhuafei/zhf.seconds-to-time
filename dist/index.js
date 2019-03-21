@@ -32,7 +32,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         var nowMinutes = Math.floor(seconds % 3600 / 60);
         // 秒
         var nowSeconds = Math.floor(seconds % 60);
-        return { day: nowDay, hours: nowHours, minutes: nowMinutes, seconds: nowSeconds, allSeconds: seconds };
+        return {
+            day: nowDay,
+            hours: nowHours,
+            dayMergeToHours: nowDay * 24 + nowHours,
+            minutes: nowMinutes,
+            seconds: nowSeconds,
+            allSeconds: seconds
+        };
     }
 
     return secondsToTime;
