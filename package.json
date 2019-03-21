@@ -1,6 +1,6 @@
 {
     "name": "zhf.seconds-to-time",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "秒转时间(天时分秒)",
     "main": "dist/index.min.js",
     "scripts": {
